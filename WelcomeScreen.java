@@ -18,9 +18,9 @@ import java.awt.Font;
 
 public class WelcomeScreen extends JFrame implements ActionListener{
 
-   private JLabel label;
-   private JButton playButton;
-   private JButton quitButton;
+   private static JLabel label;
+   private static JButton playButton;
+   private static JButton quitButton;
    
    public WelcomeScreen(){
    
@@ -81,6 +81,13 @@ public class WelcomeScreen extends JFrame implements ActionListener{
       playScreen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       playScreen.pack();
       playScreen.setVisible(true);
+      
+      playScreen.getContentPane().setBackground(Color.yellow);
+      
+      quitButton.setBackground(Color.gray);
+      
+      playButton.setBackground(Color.gray);
+
       
       
    }
